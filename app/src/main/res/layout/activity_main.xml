@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alpha"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_rotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotation"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_translationX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左移"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_translationX_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右移"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_translationY_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上移"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_translationY_bot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下移"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_scaleY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垂直缩放"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_scaleX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水平缩放"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/moveInWithrotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平移旋转同时" />
+
+        <Button
+            android:id="@+id/moveInafterrotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="先平移再旋转" />
+
+        <Button
+            android:id="@+id/playSequentially"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顺序执行" />
+
+        <Button
+            android:id="@+id/playTogether"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一起执行" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/startAnimatorSet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="平移旋转一起后再缩放" />
+
+    <Button
+        android:id="@+id/btn_Listener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动画监听" />
+
+    <Button
+        android:id="@+id/btn_AnimatorListenerAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="动画监听AnimatorListenerAdapter" />
+
+</LinearLayout>
